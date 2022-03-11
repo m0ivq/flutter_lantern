@@ -9,13 +9,13 @@ class Lantern {
     return haslamp;
   }*/
 
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
+  static Future<String?> get platformVersion async {
+    final String? version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
 
-  static Future<bool> get hasLamp async {
-    final bool haslamp = await _channel.invokeMethod('hasLamp');
+  static Future<bool?> get hasLamp async {
+    final bool? haslamp = await _channel.invokeMethod('hasLamp');
     return haslamp;
   }
 
